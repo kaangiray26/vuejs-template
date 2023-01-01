@@ -10,6 +10,8 @@ cp -a vuejs-template-1.0.3/. ./
 
 rm -rf vuejs-template-1.0.3
 
+rm install.sh
+
 npm i
 
 npm run dev
