@@ -1,14 +1,17 @@
 #!/bin/sh
 
-wget https://github.com/kaangiray26/vuejs-template/archive/refs/tags/v1.0.8.zip
+# Get version number ie. 1.0.8
+version=$(curl -s https://api.github.com/repos/kaangiray26/vuejs-template/releases/latest | grep tag_name | cut -d '"' -f 4 | cut -c 2-)
 
-unzip v1.0.8.zip
+wget https://github.com/kaangiray26/vuejs-template/archive/refs/tags/v$version.zip
 
-rm v1.0.8.zip
+unzip v$version.zip
 
-cp -a vuejs-template-1.0.8/. ./
+rm v$version.zip
 
-rm -rf vuejs-template-1.0.8
+cp -a vuejs-template-$version/. ./
+
+rm -rf vuejs-template-$version
 
 rm install.sh
 
