@@ -1,12 +1,22 @@
 {
     "manifest_version": 2,
-    "version": "0.1",
-    "name": "Vue.js App",
-    "short_name": "Vue",
+    "version": "1.0",
+    "name": "Template",
+    "short_name": "Temp",
     "icons": [
         {
-            "src": "/images/50x43.png",
-            "sizes": "50x43",
+            "src": "/images/48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/192.png",
+            "sizes": "192x192",
             "type": "image/png"
         }
     ],
